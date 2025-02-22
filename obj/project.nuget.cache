@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "bj2DODTgCxU=",
+  "success": true,
+  "projectFilePath": "C:\\workspace\\dotnet\\BizFlowRESTapiRunner\\BizFlowRESTapiRunner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.2\\microsoft.extensions.configuration.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.2\\microsoft.extensions.configuration.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\9.0.2\\microsoft.extensions.configuration.fileextensions.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.configuration.json\\9.0.2\\microsoft.extensions.configuration.json.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.2\\microsoft.extensions.dependencyinjection.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.2\\microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.2\\microsoft.extensions.fileproviders.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\9.0.2\\microsoft.extensions.fileproviders.physical.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\9.0.2\\microsoft.extensions.filesystemglobbing.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.logging\\9.0.2\\microsoft.extensions.logging.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.2\\microsoft.extensions.logging.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.options\\9.0.2\\microsoft.extensions.options.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.2\\microsoft.extensions.primitives.9.0.2.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
+    "C:\\Users\\taeholee\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

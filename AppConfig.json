@@ -1,0 +1,19 @@
+{
+  "Network": {
+    "Endpoint": "https://tlws2019sql/bizflow/api/v1",
+    "EndpointFileUpload": "https://tlws2019sql/bizflow/api/v1/file/put",
+    "ServerKey": "Zn6xZLxopbc4dh8U"
+  },
+  "Authentication": {
+    "LoginId": "agentuser",
+    "Password": "st1ceqef"
+  },
+  "Process": {
+    "ProcessDefinitionFolderId": 306,
+    "ProcessDefinitionId": 104,
+    "StartActivityName": "<Start 2>"
+  },
+  "Logging": {
+    "LogFilePath": "ApiTester.log"
+  }
+}
