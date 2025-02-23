@@ -1,0 +1,65 @@
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+out/
+
+# User-specific files
+*.rsuser
+*.csproj.user
+
+# Logs
+*.log
+logs/
+*.tlog
+
+# Package dependencies
+packages/
+!packages/repositories.config
+project.lock.json
+project.assets.json
+
+# Dotnet specific
+*.dotnet_tools/
+*.pdb
+*.pidb
+*.svclog
+*.cache
+*.config
+*.db
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# MacOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+NUGET_PACKAGES/
+
+# Entity Framework Migrations
+Migrations/
+
+# Coverage
+*.coverage
+*.coveragexml
+.coverage/
+.coverage-results/
+TestResults/
