@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BizFlowRESTapiRunner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8185ed991a3d3670e6699a8f0de2e855c5185bd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c15f5fd60eee5bc09d24fac892c8a0d0b0cc28f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BizFlowRESTapiRunner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BizFlowRESTapiRunner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
