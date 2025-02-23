@@ -59,9 +59,11 @@ class Program
         string[] lines = new string[]
         {
         "BizFlow REST API Runner",
-        "Developed by Taeho Lee (Feb 2025)",
         "Version 1.0.0",
+        "Developed by Taeho Lee (Feb 2025)",
+        "https://github.com/taeho-share/BizFlowRESTApiRunner",
         "A console-based interface for interacting with BizFlow REST APIs"
+
         };
 
         int top = (Console.WindowHeight - lines.Length) / 2;
@@ -111,24 +113,15 @@ class Program
             Console.WriteLine("==========        MAIN MENU        ==========");
             Console.WriteLine("=============================================");
             Console.WriteLine("");
-            Console.WriteLine("[ 1] Activity");
-            Console.WriteLine("[ 2] Attachment");
-            Console.WriteLine("[ 3] Authentication");
-            Console.WriteLine("[ 4] BizCove");
-            Console.WriteLine("[ 5] Comment");
-            Console.WriteLine("[ 6] File");
-            Console.WriteLine("[ 7] Folder");
-            Console.WriteLine("[ 8] Member");
-            Console.WriteLine("[ 9] Member_Catergory");
-            Console.WriteLine("[10] Member_Profile");
-            Console.WriteLine("[11] Map");
-            Console.WriteLine("[12] Process");
-            Console.WriteLine("[13] Process Definition");
-            Console.WriteLine("[14] Process Variable");
-            Console.WriteLine("[15] Response");
-            Console.WriteLine("[16] Workitem");
-            Console.WriteLine("[17] Workitem_Category");
-            Console.WriteLine("[99] Set How to Send API calls [Sync|Async]");
+            Console.WriteLine("[ 1] Activity            [ 2] Attachment");
+            Console.WriteLine("[ 3] Authentication      [ 4] BizCove");
+            Console.WriteLine("[ 5] Comment             [ 6] File");
+            Console.WriteLine("[ 7] Folder              [ 8] Member");
+            Console.WriteLine("[ 9] Member_Category     [10] Member_Profile");
+            Console.WriteLine("[11] Map                 [12] Process");
+            Console.WriteLine("[13] Process Definition  [14] Process Variable");
+            Console.WriteLine("[15] Response            [16] Workitem");
+            Console.WriteLine("[17] Workitem_Category   [99] Switch Request Mode [Sync|Async]");
             Console.WriteLine("[ 0] Exit");
             Console.WriteLine("");
             Console.Write("Select an option: ");
@@ -272,7 +265,7 @@ class Program
         if (_sessionKey == null)
         {
             Console.WriteLine("Please login first.");
-            return;
+            AuthenticationLogin();
         }
 
         CommonUtils.WriteColoredLine($"Executing CommentList-{_requestMode}", ConsoleColor.Blue);
@@ -300,7 +293,7 @@ class Program
         if (_sessionKey == null)
         {
             Console.WriteLine("Please login first.");
-            return;
+            AuthenticationLogin();
         }
 
         CommonUtils.WriteColoredLine($"Executing CommentPut-{_requestMode}", ConsoleColor.Blue);
@@ -345,7 +338,7 @@ class Program
         if (_sessionKey == null)
         {
             Console.WriteLine("Please login first.");
-            return;
+            AuthenticationLogin();
         }
 
         CommonUtils.WriteColoredLine($"Executing CommentDelete-{_requestMode}", ConsoleColor.Blue);
@@ -379,7 +372,7 @@ class Program
         if (_sessionKey == null)
         {
             Console.WriteLine("Please login first.");
-            return;
+            AuthenticationLogin();
         }
 
         FileUploadHandler fileUploader = new FileUploadHandler(_logger);
@@ -413,7 +406,7 @@ class Program
         if (_sessionKey == null)
         {
             Console.WriteLine("Please login first.");
-            return;
+            AuthenticationLogin();
         }
 
         CommonUtils.WriteColoredLine($"Executing FolderGet-{_requestMode}", ConsoleColor.Blue);
@@ -441,7 +434,7 @@ class Program
         if (_sessionKey == null)
         {
             Console.WriteLine("Please login first.");
-            return;
+            AuthenticationLogin();
         }
 
         CommonUtils.WriteColoredLine($"Executing FolderList-{_requestMode}", ConsoleColor.Blue);
@@ -515,7 +508,7 @@ class Program
         if (_sessionKey == null)
         {
             Console.WriteLine("Please login first.");
-            return;
+            AuthenticationLogin();
         }
 
         CommonUtils.WriteColoredLine($"Executing ProcessDefinitionGet-{_requestMode}", ConsoleColor.Blue);
@@ -539,7 +532,35 @@ class Program
         _logger.LogInformation("Response: {Response}", response);
 
     }
-    static async void ProcessDefinitionList() { Console.WriteLine("Executing Process Definition List..."); Console.ReadLine(); }
+    static async void ProcessDefinitionList() {
+
+        if (_sessionKey == null)
+        {
+            Console.WriteLine("Please login first.");
+            AuthenticationLogin();
+        }
+
+        CommonUtils.WriteColoredLine($"Executing ProcessDefinitionList-{_requestMode}", ConsoleColor.Blue);
+
+        ProcessDefinitionAPI processDefinitionAPI = new ProcessDefinitionAPI(_logger, _config, _apiRequestHandler);
+
+        Console.Write($"Enter process definition folder id:$");
+        string procDefFolderIdInput = CommonUtils.ConsoleReadLineEx();
+        int procDefFolderId = int.Parse(procDefFolderIdInput);
+
+        string response = "{}";
+        if (_requestMode != "async")
+        {
+            response = processDefinitionAPI.ProcessDefinitionList(procDefFolderId);
+        }
+        else
+        {
+            response = await processDefinitionAPI.ProcessDefinitionListAsync(procDefFolderId);
+        }
+
+        _logger.LogInformation("Response: {Response}", response);
+
+    }
     static async void ProcessDefinitionInitiate()
     {
 
@@ -547,7 +568,6 @@ class Program
         {
             Console.WriteLine("Please login first.");
             AuthenticationLogin();
-            //return;
         }
 
         CommonUtils.WriteColoredLine($"Executing ProcessDefinitionInitiate-{_requestMode}", ConsoleColor.Blue);

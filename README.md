@@ -21,9 +21,9 @@
 
 ### Prerequisites
 Ensure the following dependencies are installed:
-- **.NET 9** (or latest compatible version)
+- **.NET 9**
 - **Visual Studio** (or any compatible IDE)
-- **Windows 10/11** (Recommended OS)
+- **Windows (Recommended OS)
 
 ### Installation Steps
 
@@ -140,7 +140,7 @@ public string Login(string loginId, string password)
 ## Development Environment
 
 - **Framework**: .NET 9
-- **IDE**: Visual Studio
+- **IDE**: Visual Studio 2022
 - **OS**: Windows 10/11
 
 ## Roadmap & Future Enhancements
@@ -164,5 +164,5 @@ This software is licensed under the Mozilla Public License (MPL) 2.0.
 Modification and distribution are allowed, but commercial use and resale are prohibited.
 
 ## Acknowledgments
-Developed by **Taeho Lee** (Feb 2025).
+Developed by **Taeho Lee** (Feb 21st 2025).
 
