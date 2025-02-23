@@ -50,6 +50,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -62,13 +66,13 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
-            "Serilog": {
+            "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[9.0.2, )"
             },
-            "Serilog.Sinks.File": {
+            "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[9.0.2, )"
             }
           },
           "imports": [
