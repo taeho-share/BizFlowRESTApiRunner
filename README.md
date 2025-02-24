@@ -1,5 +1,6 @@
 # BizFlow REST API Runner
 
+by **Taeho Lee** (Feb 21st 2025).
 
 ## Overview
 
@@ -163,6 +164,4 @@ For significant modifications, please open an issue to discuss your proposed upd
 This software is licensed under the Mozilla Public License (MPL) 2.0.
 Modification and distribution are allowed, but commercial use and resale are prohibited.
 
-## Acknowledgments
-Developed by **Taeho Lee** (Feb 21st 2025).
 
